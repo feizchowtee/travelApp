@@ -1,5 +1,6 @@
 @import "./bootstrap/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
 body {
       padding: 0;
       margin: 0;
@@ -7,58 +8,70 @@ body {
       font-family: 'Poppins';
       color: #0e0e16;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
       font-weight: 700;
 
 }
+
 a {
       text-decoration: none;
       transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .nav {
-      
+
       top: 0;
       left: 0;
       width: 100%;
-      height: 80px;
+      height: 100px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      
+      justify-content: space-around;
+      position: fixed;
+      top: 0;
+      left:0;
+      z-index: 999;
       .logo {
-            margin: 0 50px;
-            img{
-                  z-index: 999;
-                 width: 60px;
-                 position: fixed;
-                 top: 50px;
-                 left:50px;
-                 border-radius: 50%;}
-
             
+
+            img {
+                  z-index: 999;
+                  width: 60px;
+                  border-radius: 50%;
+            }
+
+
       }
 
       .social {
             display: flex;
             list-style-type: none;
-            margin: 0 50px;
+           
 
             li {
                   margin: 0 1em;
 
                   a {
-                        
+
                         padding: 6px;
                         display: flex;
                         border-radius: 50%;
                         color: #0e0e16;
                         transition: .64s cubic-bezier(0.165, 0.84, 0.44, 1);
-                        &:hover, &:focus{
+
+                        &:hover,
+                        &:focus {
                               transform: rotate(-10deg);
                               text-decoration: none;
                               color: #e65d5d;
                         }
+
                         i {
                               font-size: 16px;
                         }
@@ -67,23 +80,24 @@ a {
       }
 }
 
-h2{
+h2 {
       padding: 2em 0;
       font-size: 2.5em;
       font-weight: 900;
       position: relative;
       display: inline-block;
-      text-align: center;
-      &:after{
-      position: absolute;
-      content: '';
-      width: 50%;
-      height: 15px;
-      bottom: 20%;
-      left: 0;
-      background: #0e0e16;            
+
+      &:after {
+            position: absolute;
+            content: '';
+            width: 50%;
+            height: 15px;
+            bottom: 20%;
+            left: 0;
+            background: #0e0e16;
       }
 }
+
 .landing {
       width: 100%;
       min-height: 100vh;
@@ -101,31 +115,35 @@ h2{
             position: absolute;
             top: 0;
             left: 0;
-
-
+            overflow: hidden;
       }
-      .container{
-            .row{
-                  .image{
+
+      .container {
+            .row {
+                  .image {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                    
-                     .marvel-device.iphone-x{
-                        transform: scale(.68);
-                     }
+
+                        .marvel-device.iphone-x {
+                              transform: scale(.5);
+                        }
                   }
-                  .hero-desc{
+
+                  .hero-desc {
                         padding: 1em 0;
-                        h1{
+
+                        h1 {
                               font-size: 3em;
                         }
-                        p{
+
+                        p {
                               font-size: 1.2em;
                               text-align: center;
                         }
-                        .btn-group{
-                              a:not(:first-child){
+
+                        .btn-group {
+                              a:not(:first-child) {
                                     margin: 0 2em;
                               }
                         }
@@ -134,34 +152,40 @@ h2{
       }
 
 }
-h3,h4{
+
+h3,
+h4 {
       display: block;
       padding: 1em 0;
 }
-.features{
-      .container{
-            .row{
+
+.features {
+      .container {
+            .row {
                   margin: 1em 0;
-                  .image{
-                        .marvel-device.iphone-x{
+
+                  .image {
+                        .marvel-device.iphone-x {
                               transform: scale(.8);
                         }
                   }
             }
       }
 }
-.download{
-      .container{
-            .row{
-                  .col-md-6{
-                        img{
+
+.download {
+      .container {
+            .row {
+                  .col-md-6 {
+                        img {
                               margin: 1em 0;
                         }
                   }
             }
       }
 }
-.link-btn{
+
+.link-btn {
       transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       padding: 6px 20px;
       background: #e65d5d;
@@ -169,19 +193,31 @@ h3,h4{
       box-sizing: border-box;
       border: 2px solid transparent;
       display: inline-block;
-      &:hover, &:focus{
+
+      &:hover,
+      &:focus {
             text-decoration: none;
             color: #0e0e16;
             border: 2px solid #0e0e16;
             transform: translateY(10px);
       }
 }
-
+.benefits{
+      width: 100%;
+      .container{
+            .row{
+                  margin: 2em auto;
+                  .col-md-4{
+                        margin: 1em auto;
+                  }
+            }
+      }
+}
 
 //media queries
 
-@media only screen and (max-width : 700px){
-      .marvel-device.iphone-x{
+@media only screen and (max-width : 700px) {
+      .marvel-device.iphone-x {
             transform: scale(.5);
       }
 }
