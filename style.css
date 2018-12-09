@@ -9615,21 +9615,8 @@ h2:after {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background: url("https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.landing .bg {
   background: #ffffff;
-  opacity: .5;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+  margin-top: 120px;
 }
 
 .landing .container .row .image {
@@ -9645,8 +9632,8 @@ h2:after {
 }
 
 .landing .container .row .image .marvel-device.iphone-x {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .landing .container .row .hero-desc {
@@ -9659,7 +9646,6 @@ h2:after {
 
 .landing .container .row .hero-desc p {
   font-size: 1.2em;
-  text-align: center;
 }
 
 .landing .container .row .hero-desc .btn-group a:not(:first-child) {
@@ -9682,7 +9668,7 @@ h4 {
 }
 
 .download .container .row .col-md-6 img {
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .link-btn {
@@ -9719,8 +9705,8 @@ h4 {
 
 @media only screen and (max-width: 700px) {
   .marvel-device.iphone-x {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.15);
+            transform: scale(0.15);
   }
 }
 /*# sourceMappingURL=style.css.map */
